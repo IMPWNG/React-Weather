@@ -32,3 +32,5 @@ function getResults(query){
 function displayResults(weather){
     console.log(weather);
 }
+
+//test
