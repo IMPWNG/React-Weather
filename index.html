@@ -6,25 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>Weather App </title>
+    <link rel="stylesheet" href="./weather-icons.min.css">
+    <title>How's the Weather ?</title>
 </head>
 
 <body>
-<header>
-    <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city ..." />
-</header>
-    <div class="location">
-        <h1 class="location-city">City</h1>
-        <h2 class="location-timezone">Time Zone</h2>
-        <p>Icon</p>
-    </div>
-    <div class="temperature">
-        <div class="dregree-section">
-            <h2 class="temperature-degree">34</h2>
-            <span>F</span>
-        </div>
-        <div class="temperature-description">Its Cold</div>
-    </div>
+    <header>        
+        <div class="app-wrap">
+            <input type="text" autocomplete="off" class="search" placeholder=" Where are you ?"/>
+            <div class="search-box"></div>
+    </header>
+
+
+
+
+          <main>
+          <li class="location">
+            <div class="city"></div>
+            <div class="date"></div>
+            <div class="time-zone"></div>
+          </section>
+          <div class="current">
+            <div class="temp"><span></span></div>
+            <div class="weather"></div>
+            <div class="hi-low"></div>
+          </div>
+        </main>
+      
     <script src="./app.js"></script>
 </body>
 
