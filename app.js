@@ -7,6 +7,7 @@ const api = {
 const searchbox = document.querySelector('.search');
 searchbox.addEventListener('keypress', setQuery);
 
+
 function setQuery(evt) {
     if(evt.keyCode == 13){
         getResults(searchbox.value);
@@ -29,10 +30,14 @@ function displayResults(weather){
     let date = document.querySelector('.location .date');
     date.innerText = dateBuilder(now);
 
-    let temp = document.querySelector('.current .temp');
+    let temp = document.querySelector('.current-temperature .temp');
     temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
+    
+    weather.iconId = weather.weather[0].icon;
+    let iconElement = document.querySelector(".weather-icon");
+    iconElement.innerHTML = `<img src="./icons/${weather.iconId}.png"/>`;
 
-    let weather_el = document.querySelector('.current .weather');
+    let weather_el = document.querySelector('.current-temperature .weather-description');
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
