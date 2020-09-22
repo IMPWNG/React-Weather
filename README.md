@@ -4,15 +4,15 @@
 ![DONE](https://img.shields.io/badge/PROJECT-DONE-SUCCESS)
 ![ADD](https://img.shields.io/badge/PROJECT-ADD%20FEATURES-ff69b4)
 
-## Progession
+## See Live
 
-Follow the progression of the APP
+[Live](https://impwng-pwaweather-app.netlify.app)
 
-### `12/08/2020`
+## Run the App 
 
-- All good. 
+- Yarn start
 
-- Now I try to put tailwind CSS on the project. 
+
 
 
 
